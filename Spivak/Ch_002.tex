@@ -11,8 +11,16 @@
 	Assume that for some positive integer $k, \sum_{i=0}^{k} i = \frac{k(k+1)(2k+1)}{6}$ \\
 
 	\begin{align*}
-		&\sum_{i=0}^{k+1} i^2 = \sum_{i=0}^{k} + (k+1)^2 = \frac{k(k+1)(2k+1)}{6} + (k+1)^2 
+		\sum_{i=0}^{k+1} i^2 &= \sum_{i=0}^{k} i^2 + (k+1)^2 = \frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
+		&= (k+1)\left[\frac{k(2k+1)+6(k+1)}{6}\right] = (k+1)\left[\frac{2k^3 +7k + 6}{6}\right] \\
+		&= \frac{(k+1)(k+2)(2k+3)}{6},
 	\end{align*}
+
+	giving us the desired result. By the Principle of Mathematical Induction,
+
+	\[
+		\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}
+	\]
 \end{proof}
 
 \end{document}
