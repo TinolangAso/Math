@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.4)  7 APR 2023 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.4)  7 APR 2023 21:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -233,31 +233,47 @@ e
 \Gin@req@height=\dimen165
 \Gin@req@width=\dimen166
 )
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 	\begin{enumerate}[label=\roman)*]
-                                      
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.9 	\begin{enumerate}[label=\roman)*]
-                                      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
- 
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Ch_002.aux) ) 
 Here is how much of TeX's memory you used:
- 3539 strings out of 476025
- 54695 string characters out of 5796533
- 1849388 words of memory out of 5000000
- 23828 multiletter control sequences out of 15000+600000
- 516334 words of font info for 48 fonts, out of 8000000 for 9000
+ 3561 strings out of 476025
+ 54836 string characters out of 5796533
+ 1863388 words of memory out of 5000000
+ 23842 multiletter control sequences out of 15000+600000
+ 519471 words of font info for 60 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 71i,3n,76p,265b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 71i,9n,76p,265b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msam10.pfb>
+Output written on Ch_002.pdf (1 page, 91429 bytes).
+PDF statistics:
+ 53 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
