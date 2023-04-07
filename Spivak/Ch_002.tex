@@ -1,59 +1,69 @@
 \documentclass[11pt]{amsart}
 \usepackage{mathtools}
+\usepackage{enumitem}
 
 \begin{document}
 
-(i). $\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$
+\begin{enumerate}[label=\Alph*)]
 
-\begin{proof}
-	Suppose $n=1$, we have $1^2 = \frac{1(1+1)(2+1)}{6}$ \\
+	\begin{enumerate}[label=\roman)*]
+		\item $\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$
 
-	Assume that for some positive integer $k, \sum_{i=1}^{k} i = \frac{k(k+1)(2k+1)}{6}$ \\
+		\begin{proof}
+			Suppose $n=1$, we have $1^2 = \frac{1(1+1)(2+1)}{6}$ \\
 
-	\begin{align*}
-		\sum_{i=1}^{k+1} i^2 &= \sum_{i=1}^{k} i^2 + (k+1)^2 = \frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
-		&= (k+1)\left[\frac{k(2k+1)+6(k+1)}{6}\right] = (k+1)\left[\frac{2k^3 +7k + 6}{6}\right] \\
-		&= \frac{(k+1)(k+2)(2k+3)}{6},
-	\end{align*}
+			Assume that for some positive integer $k, \sum_{i=1}^{k} i = \frac{k(k+1)(2k+1)}{6}$ \\
 
-	giving us the desired result. By the Principle of Mathematical Induction,
+			\begin{align*}
+				\sum_{i=1}^{k+1} i^2 &= \sum_{i=1}^{k} i^2 + (k+1)^2 = \frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
+				&= (k+1)\left[\frac{k(2k+1)+6(k+1)}{6}\right] = (k+1)\left[\frac{2k^3 +7k + 6}{6}\right] \\
+				&= \frac{(k+1)(k+2)(2k+3)}{6},
+			\end{align*}
 
-	\[
-		\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}
-	\]
-\end{proof}
+			giving us the desired result. By the Principle of Mathematical Induction,
 
-(ii). $1^3 + \dots \, + n^3 = \left(1 + \dots + n\right)^2$
+			\[
+				\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}
+			\]
+		\end{proof}
 
-\bigskip
+		\item $1^3 + \cdots \, + n^3 = \left(1 + \dots + n\right)^2$
 
-Do note that $1^3 + \dots \, + n^3$ is the same as $\sum_{i=1}^n i^3$ and that\\
+		\bigskip
 
-$\left(1 + \dots + n\right)^2 = \left(\sum_{i=1}^n i\right)^2 = \left(\frac{n(n+1)}{2}\right)^2$
-$= \frac{n^2(n+1)^2}{4}$ \\
+		Do note that $1^3 + \cdots \, + n^3$ is the same as $\sum_{i=1}^n i^3$ and that\\
 
-\medskip
+		$\left(1 + \cdots + n\right)^2 = \left(\sum_{i=1}^n i\right)^2 = \left(\frac{n(n+1)}{2}\right)^2$
+		$= \frac{n^2(n+1)^2}{4}$ \\
 
-So we can simplify the problem into;
+		\medskip
 
-\medskip
+		So we can simplify the problem into;
 
-$\sum_{i=1}^n i^3 = \frac{n^2(n+1)^2}{4}$ \\
+		\medskip
 
-\begin{proof}
-	Let $n=1$, then $1^3 = \frac{1^2 \, (1+1)^2}{4}$. Hence the proposition is true.\\
+		$\sum_{i=1}^n i^3 = \frac{n^2(n+1)^2}{4}$ \\
 
-	Now assume that, $\sum_{i=1}^{k} i^3 = \frac{k^2\,(k+1)^2}{4}$ is true for some positive integer $k$.
+		\begin{proof}
+			Let $n=1$, then $1^3 = \frac{1^2 \, (1+1)^2}{4}$. Hence the proposition is true.\\
 
-	Then,\\
+			Now assume that, $\sum_{i=1}^{k} i^3 = \frac{k^2\,(k+1)^2}{4}$ is true for some positive integer $k$.
 
-	\begin{align*}
-		\sum_{i=1}^{k+1} i^3 &= \sum_{i=1}^{k} i^3 + (k+1)^3 = \frac{k^2 (k+1)^2}{4} + (k+1)^3 \\
-				     &= (k+1)^2 \left[\frac{k^2 + 4(k+1)}{4}\right] = (k+1)^2\left[\frac{k^2 + 4k + 4}{4}\right]\\
-		&= \frac{(k+1)^2/,(k+2)^2}{2}
-	\end{align*}
+			Then,\\
 
-	By the principle of induction, the formula holds for all positive integers $n$.
-\end{proof}
+			\begin{align*}
+				\sum_{i=1}^{k+1} i^3 &= \sum_{i=1}^{k} i^3 + (k+1)^3 = \frac{k^2 (k+1)^2}{4} + (k+1)^3 \\
+						     &= (k+1)^2 \left[\frac{k^2 + 4(k+1)}{4}\right] = (k+1)^2\left[\frac{k^2 + 4k + 4}{4}\right]\\
+				&= \frac{(k+1)^2/,(k+2)^2}{2}
+			\end{align*}
 
+			By the principle of induction, the formula holds for all positive integers $n$.
+	\end{proof}
+
+
+%\begin{align}
+%	\sum_{i=1}^n (2i-1) = 1 + 3 + 5 + \cdots (2i-1)
+%\end{align}
+%
+%\end{enumerate}
 \end{document}
